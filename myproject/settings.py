@@ -70,7 +70,9 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://localhost:3000",
-    "http://192.168.1.70:3000"
+    "http://192.168.1.70:3000",
+    "https://emishapirophotography.com",
+
 ]
 
 ROOT_URLCONF = 'myproject.urls'
