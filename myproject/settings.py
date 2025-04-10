@@ -35,7 +35,7 @@ SECRET_KEY = 'django-insecure-nvw*^^trz@7$bslw015u9_z-cktl0_l6rdd(o(+z(^2sh7$b!9
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'emi-photo-site-backend.onrender.com',
+    'photo-website-backend.onrender.com',
 ]
 
 
