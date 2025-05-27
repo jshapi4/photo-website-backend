@@ -73,7 +73,7 @@ def create_html_email(contact_submission):
                                 
                                 <!-- Call to action -->
                                 <div style="text-align: center; margin-top: 30px;">
-                                    <a href="mailto:{contact_submission.email}" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 25px; font-size: 16px; font-weight: 500; display: inline-block;">Reply to Client</a>
+                                    <a href="mailto:{contact_submission.email}?subject=Re: Your Photography Inquiry - {contact_submission.pricing_package} Package&body=Hi {contact_submission.first_name},%0D%0A%0D%0AThank you for your interest in Emi Shapiro Photography, regarding your inquiry about the {contact_submission.pricing_package}!%0D%0A%0D%0AYour original message:%0D%0A%22{contact_submission.message.replace(chr(10), '%0D%0A').replace(chr(13), '').replace('&', '%26').replace('#', '%23').replace('?', '%3F')}%22%0D%0A%0D%0ALet me know if you have any questions about availability and next steps.%0D%0A%0D%0ABest regards,%0D%0AEmi%0D%0AEmi Shapiro Photography" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 25px; font-size: 16px; font-weight: 500; display: inline-block; margin: 0 10px 10px 0;">Reply to Client</a>
                                 </div>
                             </td>
                         </tr>
